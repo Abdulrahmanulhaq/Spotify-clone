@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+.hero{
+	height: 100vh;
+	width: 100%;
+	background-color: rgb(151, 49, 49);
+	background-size: cover;
+	background-position: center;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+span{
+	color: #1ab26b;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: rgb(58, 0, 0);
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #1ab26b;
+	transition: .4s;
+}
+.btn{
+	background-color:#1ab26b;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+.content{
+	position: absolute;
+	top: 50%;
+	left:8%;
+	transform: translateY(-50%);
+}
+h1{
+	color: white;
+	margin: 20px 0px 20px;
+	font-size: 60px;
+}
+h3{
+	color: white;
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+h4{
+	color: #fcfc;
+	letter-spacing: 2px;
+	font-size: 90px;
+}
+.newslatter form{
+	width: 380px;
+	max-width: 100%;
+	position: relative;
+}
+.newslatter form input:first-child{
+	display: inline-block;
+	width: 100%;
+	padding: 14px 130px 14px 15px;
+	border: 2px solid #1ab26b;
+	outline: none;
+	border-radius: 30px;
+}
+.newslatter form input:last-child{
+	position: absolute;
+	display: inline-block;
+	outline: none;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 30px;
+	background-color:#1ab26b;
+	color: white;
+	box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+	top: 6px;
+	right: 6px; 
+}
+
+.about{
+	width: 100%;
+    
+	padding: 100px 0px;
+	background-image: url("images/landing.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.about img{
+	height: auto;
+	width: 100px;
+}
+.about-text{
+	width: 550px;
+}
+.main{
+	width: 9130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: white;
+	font-size: 15px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 52px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 2px;
+	line-height: 45px;
+	font-size: 28px;
+	margin-bottom: 45px;
+}
+button{
+	background-color:#1ab26b;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 10px;
+	transition: .4s; 
+}
+button:hover{
+	background-color: transparent;
+	border: 2px solid #1ab26b;
+	cursor: pointer;
+}
+
+.service{
+	background: #101010;
+	width: 100%;
+	padding: 100px 0px;
+}
+.title h2{
+	color: white;
+	font-size: 45px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+.card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: #1ab26b;
+
+}
+h5{
+	color: white;
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color: #fcfc;
+	font-size: 23px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.card .button{
+	background-color:#1ab26b;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid #1ab26b;
+	cursor: pointer;
+}
+.contact-me{
+	width: 100%;
+	height: 700px;
+	background: #1ab26b;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contact-me h1{
+	background: #1ab26b;
+    font-size: 50px;
+}
+.contact-me p{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.contact-me .button-two{
+	background-color:#1ab26b;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 73px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.contact-me .button-two:hover{
+	background-color: transparent;
+	border: 2px solid #1ab26b;
+	cursor: pointer;
+}
+footer{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #1ab26b;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color:#1ab26b;
+	bottom: 35px;
+	font-size: 14px; 
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	height: 18%;
+	box-shadow: 0 5px 15px rgba(0,0,0,.2);	
+}
+
+.logo img {
+   margin-left: 2.3em;
+   max-width: 30%;
+   height: auto !important;
+}
+
+ nav ul {
+	display: flex;
+    flex-flow: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+    list-style-type: none;
+}
+
+ul li a {
+	padding: 10px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #262625;
+	font-weight: bold;
+    transition: .5s;
+}
+
+ul li a:hover {
+	background: #000;
+	color: #fff;
+    transition: .5s
+}
+
+.menu-trigger {
+    display:none;
+    margin-right: 1.5em;
+	background: #D56287;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+	cursor: pointer;
+	font-weight: bold;
+    text-decoration: none;
+}
+
+    </style>
+
+</head>
+<body>
+	<!----hero Section start---->
+
+	
+    <section>
+        <header>
+            <div class="logo">
+		      <a href="#"><img src="images/spotify-logo.png"></a>
+            </div>
+            <nav>
+		    <ul>
+			    <li><a href="#">Premium</a></li>
+				<li><a href="#">Discover</a></li>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Download</a></li>
+				
+			</ul>
+            </nav>
+            <div class="menu">
+               <a href="#" class="menu-trigger">Меню</a>
+            </div>
+         </header>			
+      </section>
+
+		<div class="content">
+			
+			<h1>Music for <span>Everyone</span></h1>
+			
+			
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section class="about">
+		<div class="main">
+			<img >
+			<div class="about-text">
+				<h2><img src="images/spotify-icon-white.png"></h2>
+				<h5>Spotify</span></h5>
+				<p>now free on mobile, tablet and computer.
+                    Listen to the right music, wherever you are.
+                    </p>
+				<button type="button">Let's Listen</button>
+			</div>
+		</div>
+	</section>
+
+	<!-----service section start----------->
+	<div class="service">
+		<div class="title">
+			<h2>What's on Spotify?</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Millions of Songs</h5>
+				<div class="pra">
+					<p>There are millions of
+                        songs on Spotify </p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>HD Music</h5>
+				<div class="pra">
+					<p>Listen to music as if you
+                        were listening live</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>Stream Everywhere</h5>
+				<div class="pra">
+					<p>Stream music on your
+                        smartphone, tablet or
+                        computer
+                        </p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------Contact Me------>
+	<div class="contact-me">
+        <h1>it is as yeezy as kanye west</h1>
+        <p>Search</p>
+		<h2>Know what you want to listen to?
+            Just search and hit play.</h2>
+
+            <p>Browse</p>
+            <h2>Check out the latest charts,
+                brand new releases and great
+                playlists for right now.</h2>
+                
+                
+
+                <p> Discover</p>
+		<h2>Enjoy new music every Monday
+            with your own personal playlist.
+            Or sit back and enjoy Radio.</h2>
+        
+		
+	</div>
+
+	<!------footer start--------->
+	<footer>
+		
+		<div class="social">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-dribbble"></i></a>
+		</div>
+		<p class="end">CopyRight By Spotify</p>
+	</footer>
+</body>
+</html>
